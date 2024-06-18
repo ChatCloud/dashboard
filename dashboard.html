@@ -476,7 +476,7 @@ h2 {
                 <div class="initial">F</div> <!-- Exemple avec la lettre "J" -->
                 <span class="username">Francket Gbaguidi</span> <!-- Exemple de nom d'utilisateur -->
                 <form action="https://chatcloud.github.io/operator-s-portal/portal.html" method="POST"> <!-- Remplacez 'logout_page.html' par l'URL de votre page de déconnexion -->
-                <button class="logout-btn" id="logout-btn">Logout</button>
+                <button class="logout-btn" id="logout-btn" onclick="logout()">Logout</button>
             </div>
         </div>
     </header>
@@ -585,6 +585,10 @@ h2 {
                         </div>
                         </div>
                         <script>
+                            function logout() {
+                                window.location.href = 'login_page.html'; // Remplacez 'login_page.html' par l'URL de votre page de connexion
+                            }
+                            
                             // Fonction pour afficher la section correspondante dans la section de droite
                             function showSection(sectionId) {
                                 var sections = document.querySelectorAll('.right-section');
