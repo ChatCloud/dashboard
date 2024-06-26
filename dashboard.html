@@ -461,6 +461,24 @@ h2 {
     margin-bottom: 40px; /* Ajoutez un margin-bottom pour espacer les éléments entre eux */
     line-height: 1.5; /* Espacement vertical entre les lignes */
 }
+
+.activate-account-btn {
+    display: block;
+    margin: 5px 0; /* Espacement augmenté autour du bouton */
+    padding: 8px 10px; /* Augmenter le rembourrage */
+    border: none;
+    background-color: #8B0000;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px; /* Bords plus arrondis */
+    font-size: 18px; /* Taille augmentée du texte */
+    transition: background-color 0.3s ease;
+}
+
+.activate-account-btn:hover {
+    background-color: #8B0000;
+}
     </style>
 </head>
 <body>
@@ -470,6 +488,9 @@ h2 {
                 <img src="https://www.chatcloud.net/wp-content/uploads/2020/08/chatcloud_color_blk.png" alt="Chatcloud Logo">
                 <span>Chat Cloud</span>
             </div>
+        </div>
+        <div class="center-button-container">
+            <button class="activate-account-btn" onclick="window.location.href='https://accountactivation.interfacechatcloud.fun/account_activation.html'">Activate my account</button>
         </div>
         <div class="header-right">
             <div class="user-info">
